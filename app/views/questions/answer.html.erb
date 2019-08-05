@@ -1,0 +1,8 @@
+<h3> <%= params[:question].capitalize %></h2>
+<% if params[:question].include?('?') %>
+<p>- Silly question, get dressed and go to work!</p>
+<% else %>
+<p>- I don't care, get dressed and go to work!</p>
+<% end %>
+<p> <%= link_to "Ask a new question", ask_path %> </p>
+
